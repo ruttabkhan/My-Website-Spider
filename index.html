@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruttab Khan | Creative Portfolio</title>
+<meta name="description" content="Ruttab Khan — IT specialist, tourism &amp; hospitality professional, and creative technologist. Explore projects, skills and services.">
+<meta property="og:title" content="Ruttab Khan | Creative Portfolio">
+<meta property="og:description" content="Tourism. Technology. Creativity. The portfolio of Ruttab Khan.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Loading screen -->
+<div class="loader" role="status" aria-label="Loading">
+  <svg class="loader-web" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#e50914" fill="none" stroke-width="0.6">
+      <circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="55"/><circle cx="100" cy="100" r="80"/>
+      <line x1="100" y1="0" x2="100" y2="200"/><line x1="0" y1="100" x2="200" y2="100"/>
+      <line x1="30" y1="30" x2="170" y2="170"/><line x1="170" y1="30" x2="30" y2="170"/>
+    </g>
+  </svg>
+  <div class="loader-mark">
+    <span>RUTTAB</span>
+    <span class="accent">KHAN</span>
+  </div>
+  <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+  <div class="loader-status"><span>INITIALIZING EXPERIENCE</span><span class="loader-percent">0%</span></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+<div class="web-layer" aria-hidden="true">
+  <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#e50914" fill="none" stroke-width="0.4">
+      <circle cx="300" cy="300" r="90"/><circle cx="300" cy="300" r="160"/><circle cx="300" cy="300" r="230"/><circle cx="300" cy="300" r="290"/>
+      <line x1="300" y1="10" x2="300" y2="590"/><line x1="10" y1="300" x2="590" y2="300"/>
+      <line x1="90" y1="90" x2="510" y2="510"/><line x1="510" y1="90" x2="90" y2="510"/>
+      <line x1="195" y1="30" x2="405" y2="570"/><line x1="405" y1="30" x2="195" y2="570"/>
+      <line x1="30" y1="195" x2="570" y2="405"/><line x1="30" y1="405" x2="570" y2="195"/>
+    </g>
+  </svg>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="page-transition" aria-hidden="true"><div class="sweep"></div></div>
+
+<!-- Nav -->
+<nav class="site-nav" aria-label="Primary">
+  <a href="index.html" class="nav-mark" aria-label="Ruttab Khan home">RK</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="experience.html">Experience</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Contact</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="experience.html">Experience</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal="up">Portfolio — 2026</p>
+        <h1 class="hero-title">
+          <span class="hero-line">HELLO, I'M</span>
+          <span class="hero-line hero-name text-gradient is-animated" data-split>RUTTAB KHAN</span>
+        </h1>
+        <p class="hero-sub" data-reveal="up" data-reveal-delay="2">TOURISM &nbsp;•&nbsp; TECHNOLOGY &nbsp;•&nbsp; CREATIVITY</p>
+        <div class="hero-actions" data-reveal="up" data-reveal-delay="3">
+          <a href="about.html" class="btn btn-primary">Explore My World <span class="btn-arrow">→</span></a>
+          <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-parallax aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="hero-web hero-glow-pulse">
+          <defs>
+            <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#e50914" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#e50914" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="180" fill="url(#heroGlow)"/>
+          <g stroke="#ff1e2d" fill="none" stroke-width="0.7" opacity="0.7">
+            <circle cx="200" cy="200" r="60"/>
+            <circle cx="200" cy="200" r="105"/>
+            <circle cx="200" cy="200" r="150"/>
+            <line x1="200" y1="20" x2="200" y2="380"/>
+            <line x1="20" y1="200" x2="380" y2="200"/>
+            <line x1="60" y1="60" x2="340" y2="340"/>
+            <line x1="340" y1="60" x2="60" y2="340"/>
+            <line x1="130" y1="20" x2="270" y2="380"/>
+            <line x1="270" y1="20" x2="130" y2="380"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="scroll-indicator hero-scroll">
+      <span class="scroll-label">SCROLL TO EXPLORE</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true"><path d="M8 0V22M8 22L2 16M8 22L14 16" stroke="#ff1e2d" stroke-width="1.4"/></svg>
+    </div>
+  </section>
+
+  <!-- Intro strip -->
+  <section class="section section-tight intro-strip">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">Who I Am</p>
+      <p class="intro-line" data-reveal="blur">
+        A technologist and hospitality professional who builds calm, dependable systems by day
+        and chases striking images and interfaces by night — five years across IT support,
+        tourism operations, and self-taught front-end craft.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">What I Do</p>
+      <h2 class="section-title" data-reveal="up" data-reveal-delay="1">Three disciplines,<br>one way of working.</h2>
+
+      <div class="feature-grid mt-lg">
+        <a href="skills.html" class="feature-card tilt-card glass-card" data-reveal="up">
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <span class="feature-index">01</span>
+          <h3>Technology</h3>
+          <p>Computer operations, networking, and IT support built on patient troubleshooting.</p>
+        </a>
+        <a href="skills.html" class="feature-card tilt-card glass-card" data-reveal="up" data-reveal-delay="1">
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <span class="feature-index">02</span>
+          <h3>Hospitality</h3>
+          <p>Tourism and guest relations grounded in genuine, unhurried customer care.</p>
+        </a>
+        <a href="gallery.html" class="feature-card tilt-card glass-card" data-reveal="up" data-reveal-delay="2">
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <span class="feature-index">03</span>
+          <h3>Creative</h3>
+          <p>Photography and visual design that turns ordinary moments cinematic.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="section section-tight cta-band">
+    <div class="container cta-band-inner" data-reveal="scale">
+      <h2 class="section-title">Let's build<br>something <span class="text-gradient">worth showing.</span></h2>
+      <a href="projects.html" class="btn btn-primary">View Projects <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <svg class="footer-web" viewBox="0 0 400 400" aria-hidden="true">
+    <g stroke="#e50914" fill="none" stroke-width="0.6">
+      <circle cx="200" cy="200" r="70"/><circle cx="200" cy="200" r="130"/><circle cx="200" cy="200" r="190"/>
+      <line x1="200" y1="10" x2="200" y2="390"/><line x1="10" y1="200" x2="390" y2="200"/>
+      <line x1="60" y1="60" x2="340" y2="340"/><line x1="340" y1="60" x2="60" y2="340"/>
+    </g>
+  </svg>
+  <div class="container">
+    <div class="footer-top" data-reveal="up">
+      <div>
+        <div class="footer-mark">RUTTAB KHAN</div>
+        <p class="footer-tagline">Create. <span>Explore.</span> Experience.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ruttab Khan. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14V2M8 2L2.5 7.5M8 2L13.5 7.5" stroke="#fff" stroke-width="1.4"/></svg>
+</button>
+
+<script src="js/particles.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
